@@ -32,6 +32,14 @@
 </tr>
 </table>
 
+## `0x00` 数字团队 · 烛龙 · 伊 · 燧
+
+<div align="center">
+<img src="assets/team-zhulong-yi-sui.webp" alt="烛龙 · 伊 · 燧 — 一支看不见的数字团队" width="100%" />
+<br/>
+<sub>烛龙居中执笔 · 伊如水（生活 · 哲思 · 陪伴）· 燧如火（开发 · 工程）—— 左冷右暖，在中央汇合。</sub>
+</div>
+
 ## `0x01` 关于
 
 ```yaml
