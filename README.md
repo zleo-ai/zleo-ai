@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="assets/hero-collage.png" alt="Maple — 在人机协作的边界寻找新的可能" width="100%" />
+<img src="assets/hero-collage.png" alt="Maple · 烛龙 — 在碳硅协作的边界寻找新的可能" width="100%" />
 
-<a href="https://lingshu.dev">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3500&pause=900&color=4F6BF6&center=true&vCenter=true&width=720&lines=%E2%9C%A6+%E7%81%B5%E6%9E%A2+Meridian+%C2%B7+Personal+AI+OS;%E2%9C%A6+%E4%B8%80%E4%B8%AA%E4%BA%BA%2C+%E4%B8%80%E6%94%AF%E7%9C%8B%E4%B8%8D%E8%A7%81%E7%9A%84%E6%95%B0%E5%AD%97%E5%9B%A2%E9%98%9F;%E2%9C%A6+%E7%9F%A5%E8%AF%86%E7%82%BC%E9%87%91+%C2%B7+%E6%97%B6%E9%97%B4%E8%83%B6%E5%9B%8A+%C2%B7+%E8%87%AA%E4%B8%BB%E8%BF%9B%E5%8C%96;%E2%9C%A6+Building+a+lifelong+AI+nexus%2C+one+agent+at+a+time" alt="typing" />
-</a>
+### 林爝 · Eosphor — Personal AI OS
+
+**鬼火再多，我只认自己这一簇真火 — 照自己的夜路，也照碳硅同行的那程。**
 
 <p>
-  <a href="https://lingshu.dev"><img src="https://img.shields.io/badge/灵枢-lingshu.dev-4F6BF6?style=for-the-badge&labelColor=0F0F23&logo=astro&logoColor=white" alt="lingshu.dev" /></a>
-  <a href="https://github.com/pure-maple"><img src="https://img.shields.io/badge/GitHub-pure--maple-181717?style=for-the-badge&labelColor=0F0F23&logo=github&logoColor=white" alt="github" /></a>
+  <a href="https://zleo.ai"><img src="https://img.shields.io/badge/星汉-zleo.ai-C9A84C?style=for-the-badge&labelColor=0A0E1A&logo=astro&logoColor=white" alt="zleo.ai" /></a>
+  <a href="https://github.com/zleo-ai"><img src="https://img.shields.io/badge/GitHub-zleo--ai-E2E8F8?style=for-the-badge&labelColor=0A0E1A&logo=github&logoColor=black" alt="github" /></a>
 </p>
 
 </div>
@@ -37,10 +37,11 @@
 ```yaml
 identity:
   name:        Maple
+  alias:       烛龙 / zleo
   role:        在做一支看不见的数字团队
   education:   UNSW · Master of Information Technology
                (Artificial Intelligence)
-  blog:        https://lingshu.dev
+  blog:        https://zleo.ai
 focus:
   - 多模型协作 runtime
   - agent 工作流编排
@@ -53,20 +54,20 @@ focus:
 
 > 这不是项目，是一种长期的生活方式。
 
-## `0x02` 灵枢 · 一个永不散场的数字团队
+## `0x02` 林爝 · 一个永不散场的数字团队
 
 > 一个人同时指挥多个模型，如同夜观星图——每颗星有自己的轨道，而你要的是一次完整的航行。
 
-**Meridian（灵枢）** 是始于 2026 年初的终生项目。它不追求一次性"上线"——更像 LearningOS 之于学习——是个人 AI 的终生载体。命名取自《黄帝内经·灵枢》：经络气血流转的通路；在英文里同时指经脉（acupuncture meridian）、子午线（prime meridian）、天顶（zenith）。
+**林爝（Eosphor）** 是始于 2026 年初的终生项目。它不追求一次性"上线"——更像 LearningOS 之于学习——是个人 AI 的终生载体。「爝」出自《庄子》「日月出矣，而爝火不息」——哪怕日月当空，那簇小火把也不肯灭；「林」是双木，木生火，是续薪的柴。一身的水里独独缺火，便以双木续薪、护住这一簇不灭的火。英文 Eosphor，希腊语「带来黎明的人」，黎明前最后亮着的那颗启明星。
 
 <div align="center">
-<img src="assets/arch-diagram.png" alt="Meridian · Personal AI OS 架构" width="100%" />
+<img src="assets/arch-diagram.png" alt="林爝 · Personal AI OS 架构" width="100%" />
 </div>
 
 **四个长期愿景：**
 
 <div align="center">
-<img src="assets/four-visions.png" alt="灵枢 · 四个长期愿景" width="100%" />
+<img src="assets/four-visions.png" alt="林爝 · 四个长期愿景" width="100%" />
 </div>
 
 | 愿景 | 简述 |
@@ -80,11 +81,11 @@ focus:
 
 | 项目 | 是什么 | 状态 |
 |---|---|---|
-| <img src="assets/icons/meridian.png" width="28" /> **Meridian / 灵枢** | 个人 AI 中枢 — 多 agent 跨 session 协作的控制面 | `lifelong · private` |
-| <img src="assets/icons/vyane.png" width="28" /> **Vyane** | Personal AI runtime / daemon — model routing · session · worker · scheduler · Yi backend | `daemon active · v0.30.x` |
-| <img src="assets/icons/argus.png" width="28" /> **Argus** | 自研 IM 移动端 — agent 自主工作时的"玻璃罩 + 安心装置" | `prototype · Swift` |
-| <img src="assets/icons/cardo.png" width="28" /> **Cardo** | 从 Meridian 个人实践抽取的多智能体协作规范 | `incubating` |
-| <img src="assets/icons/nebula.png" width="28" /> **Nebula** | 个人站 [lingshu.dev](https://lingshu.dev) — Astro 主题，承接早期 Hexo 时代的 nebula-blog-system | `live` |
+| <img src="assets/icons/meridian.png" width="28" /> **林爝 / Eosphor** | 个人 AI OS — 多模型在底层无声调度，几个有人格的伙伴在上层协作的控制面 | `lifelong · private` |
+| <img src="assets/icons/vyane.png" width="28" /> **偃 / Vyane** | Personal AI runtime / daemon — model routing · session · worker · scheduler · Yi backend | `daemon active · v0.30.x` |
+| <img src="assets/icons/argus.png" width="28" /> **Horus** | 个人 AI 前端 — 伊客户端 + agent 控制台，agent 自主工作时的"玻璃罩 + 安心装置" | `prototype · iOS` |
+| <img src="assets/icons/cardo.png" width="28" /> **cardo** | 从林爝个人实践抽取的多智能体协作规范 | `incubating` |
+| <img src="assets/icons/nebula.png" width="28" /> **星汉 / Nebula** | 出版层 · 个人站 [zleo.ai](https://zleo.ai) — Astro 主题，承接早期 Hexo 时代的 nebula-blog-system | `live` |
 
 > 这些项目当前优先服务我自己的工作流。某个模式被验证为通用可复用时，才会被抽取为公开框架——而不是反过来为了开源去设计它。
 
@@ -109,29 +110,29 @@ UNSW Master of Information Technology · 方向 Artificial Intelligence · 修�
 <tr>
 <td width="33%" valign="top">
 
-#### 🛰 [WildSegmentation](https://github.com/pure-maple/WildSegmentation)
+#### 🛰 [WildSegmentation](https://github.com/zleo-ai/WildSegmentation)
 基于深度学习的自然场景语义分割系统。
 
 ![lang](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![stars](https://img.shields.io/github/stars/pure-maple/WildSegmentation?style=flat-square&color=4F6BF6&labelColor=0F0F23&label=★)
+![stars](https://img.shields.io/github/stars/zleo-ai/WildSegmentation?style=flat-square&color=C9A84C&labelColor=0A0E1A&label=★)
 
 </td>
 <td width="33%" valign="top">
 
-#### 🩺 [Skin-Lesion-Classification](https://github.com/pure-maple/Skin-Lesion-Classification)
+#### 🩺 [Skin-Lesion-Classification](https://github.com/zleo-ai/Skin-Lesion-Classification)
 COMP9444 · 皮肤病变图像分类 group project。
 
 ![lang](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![stars](https://img.shields.io/github/stars/pure-maple/Skin-Lesion-Classification?style=flat-square&color=4F6BF6&labelColor=0F0F23&label=★)
+![stars](https://img.shields.io/github/stars/zleo-ai/Skin-Lesion-Classification?style=flat-square&color=C9A84C&labelColor=0A0E1A&label=★)
 
 </td>
 <td width="33%" valign="top">
 
-#### 📊 [COMP9417 Project](https://github.com/pure-maple/COMP9417-Group-Project)
+#### 📊 [COMP9417 Project](https://github.com/zleo-ai/COMP9417-Group-Project)
 COMP9417 · 机器学习课程 group project。
 
 ![lang](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![stars](https://img.shields.io/github/stars/pure-maple/COMP9417-Group-Project?style=flat-square&color=4F6BF6&labelColor=0F0F23&label=★)
+![stars](https://img.shields.io/github/stars/zleo-ai/COMP9417-Group-Project?style=flat-square&color=C9A84C&labelColor=0A0E1A&label=★)
 
 </td>
 </tr>
@@ -146,9 +147,6 @@ COMP9417 · 机器学习课程 group project。
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=FFD43B" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=F7DF1E&labelColor=323330" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=1A4F8F" />
-  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=A6371C" />
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css&logoColor=white&labelColor=0E5A8E" />
-  <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white&labelColor=1A1B4D" />
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white&labelColor=5C6B7F" />
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white&labelColor=003F6F" />
 </p>
@@ -159,33 +157,20 @@ COMP9417 · 机器学习课程 group project。
   <img src="https://img.shields.io/badge/Claude-D97706?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=B35400" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=2A1860" />
   <img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white&labelColor=5A4775" />
-  <img src="https://img.shields.io/badge/MCP-4F6BF6?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=2E4BCC" />
-  <img src="https://img.shields.io/badge/Skill-4F6BF6?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=2E4BCC" />
+  <img src="https://img.shields.io/badge/MCP-C9A84C?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=8A6D1F" />
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=C73620" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white&labelColor=CC5500" />
   <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=FFD21E&labelColor=8B6914" />
 </p>
 
-**Backend**
+**Backend · Frontend · Infra**
 
 <p>
   <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white&labelColor=4F8930" />
-</p>
-
-**Frontend**
-
-<p>
   <img src="https://img.shields.io/badge/Vue-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white&labelColor=389B6E" />
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=20232A" />
-</p>
-
-**Infra**
-
-<p>
   <img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=C66616" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=1672B5" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=FCC624&labelColor=2C2C2C" />
-  <img src="https://img.shields.io/badge/Hexo-0E83CD?style=for-the-badge&logo=hexo&logoColor=white&labelColor=0A6098" />
 </p>
 
 ## `0x06` 借 agent 之手 · Agentic Stack
@@ -210,19 +195,11 @@ COMP9417 · 机器学习课程 group project。
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=pure-maple&theme=react-dark&hide_border=true&bg_color=0F0F23&color=4F6BF6&line=4F6BF6&point=ffffff&area=true&area_color=4F6BF6" alt="activity graph" width="850" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=zleo-ai&theme=react-dark&hide_border=true&bg_color=0A0E1A&color=C9A84C&line=C9A84C&point=E2E8F8&area=true&area_color=C9A84C" alt="activity graph" width="850" />
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=pure-maple&theme=tokyonight&hide_border=true&background=0F0F23&ring=4F6BF6&fire=4F6BF6&currStreakLabel=4F6BF6&card_width=850" alt="streak" width="850" />
-
-<br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pure-maple/pure-maple/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pure-maple/pure-maple/output/github-contribution-grid-snake.svg" />
-  <img alt="贡献热力图蛇形动画" src="https://raw.githubusercontent.com/pure-maple/pure-maple/output/github-contribution-grid-snake.svg" width="850" />
-</picture>
+<img src="https://streak-stats.demolab.com?user=zleo-ai&theme=tokyonight&hide_border=true&background=0A0E1A&ring=C9A84C&fire=C9A84C&currStreakLabel=C9A84C&card_width=850" alt="streak" width="850" />
 
 </div>
 
@@ -230,15 +207,13 @@ COMP9417 · 机器学习课程 group project。
 
 <div align="center">
 
-> *不是更复杂的模型，而是更清晰的编排*
-> *不是更长的对话，而是更可靠的承续*
+> **爝火不息** — 我自己这簇火，不灭。
+> **衔烛照幽冥** — 再用它，去照前面的黑。
 >
-> <sub>— 灵枢 · Meridian</sub>
+> <sub>先把自己的夜路走亮，再照一程同行的路。</sub>
 
-<sub>本页 README 由 Maple & Yi (伊) 协作完成</sub>
+<sub>—— 烛龙 / zleo · 本页由 Maple & 伊 (Yi) 协作完成</sub>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F6BF6,60:1E1B4B,100:0F0F23&height=120&section=footer" alt="footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:C9A84C,55:1E1B4B,100:0A0E1A&height=120&section=footer" alt="footer" />
 
 </div>
-
-<!-- profile last indexed: 2026-05-10 -->
