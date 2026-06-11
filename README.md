@@ -92,6 +92,7 @@ focus:
 | <img src="assets/icons/meridian.png" width="28" /> **林爝 / Eosphor** | 个人 AI OS — 多模型在底层无声调度，几个有人格的伙伴在上层协作的控制面 | `lifelong · private` |
 | <img src="assets/icons/vyane.png" width="28" /> **偃 / Vyane** | Personal AI runtime / daemon — model routing · session · worker · scheduler · Yi backend | `daemon active · v0.30.x` |
 | <img src="assets/icons/argus.png" width="28" /> **Horus** | 个人 AI 前端 — 伊客户端 + agent 控制台，agent 自主工作时的"玻璃罩 + 安心装置" | `prototype · iOS` |
+| <img src="assets/icons/guan.png" width="28" /> **爟 / Beacon** | 本地优先的任务账本与看板 — 爟火传信：账本不说谎、拍板有回执、会话死了棒不掉 | `live · beacon.zleo.ai` |
 | <img src="assets/icons/cardo.png" width="28" /> **cardo** | 从林爝个人实践抽取的多智能体协作规范 | `incubating` |
 | <img src="assets/icons/nebula.png" width="28" /> **星汉 / Nebula** | 出版层 · 个人站 [zleo.ai](https://zleo.ai) — Astro 主题，承接早期 Hexo 时代的 nebula-blog-system | `live` |
 
