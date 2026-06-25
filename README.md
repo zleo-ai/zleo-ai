@@ -85,18 +85,40 @@ focus:
 | ⚡ **自主进化** | 主 agent 常驻 IM 频道——理解模糊方向、自动拆解子任务、并行推进、关键节点主动汇报，而非等待询问。最理想的状态：让你忘记它的存在，直到发现自己已完成曾以为不可能的事。 |
 | 🔮 **动态大一统** | 知识沉淀 / 内容发布 / AI 协作 / 技能学习共享同一套数据层与身份体系。边界消融之处，工具真正成为思维的延伸。 |
 
-## `0x03` 正在搭建
+<!-- eosphor-system-module:start -->
 
-| 项目 | 是什么 | 状态 |
-|---|---|---|
-| <img src="assets/icons/meridian.png" width="28" /> **林爝 / Eosphor** | 个人 AI OS — 多模型在底层无声调度，几个有人格的伙伴在上层协作的控制面 | `lifelong · private` |
-| <img src="assets/icons/vyane.png" width="28" /> **偃 / Vyane** | Personal AI runtime / daemon — model routing · session · worker · scheduler · Yi backend | `daemon active · v0.30.x` |
-| <img src="assets/icons/argus.png" width="28" /> **Horus** | 个人 AI 前端 — 伊客户端 + agent 控制台，agent 自主工作时的"玻璃罩 + 安心装置" | `prototype · iOS` |
-| <img src="assets/icons/guan.png" width="28" /> **爟 / Beacon** | 本地优先的任务账本与看板 — 爟火传信：账本不说谎、拍板有回执、会话死了棒不掉 | `live · beacon.zleo.ai` |
-| <img src="assets/icons/cardo.png" width="28" /> **cardo** | 从林爝个人实践抽取的多智能体协作规范 | `incubating` |
-| <img src="assets/icons/nebula.png" width="28" /> **星汉 / Nebula** | 出版层 · 个人站 [zleo.ai](https://zleo.ai) — Astro 主题，承接早期 Hexo 时代的 nebula-blog-system | `live` |
+## `0x03` 项目星座 · Eosphor Constellation
 
-> 这些项目当前优先服务我自己的工作流。某个模式被验证为通用可复用时，才会被抽取为公开框架——而不是反过来为了开源去设计它。
+> 这一段由 `nebula/src/data/system.json` 生成。GitHub profile 请保留原有 hero / 视觉 / 教育 / 技术栈 / 统计等丰富结构，只替换这个模块。
+
+### 数字团队 · Agents
+
+- **伊 · Yi** · 生活 · 哲思 · 陪伴 — 生活与哲思搭档。如水，安静接住、清醒收敛——陪 Maple 想问题、接住情绪，把发散的念头收成一条线。
+- **燧 · Sui** · 开发 · 工程 — 开发工程伙伴。钻木取火，把还没有的东西从无到有钻出来、跑通、交付干净。
+- **烛龙 · zleo** · 主笔 · 笔名 — 对外笔名。衔烛照夜的龙，把后台的火，写成给人读的字。
+
+### 项目星座 · Projects
+
+#### 系统本体
+
+- **林爝 · Eosphor** `lifelong` — 个人 AI OS · 系统本体。多模型在底层无声调度，几个有人格的伙伴在上层协作的控制面。 · [公开项目页](https://nebula.zleo.ai/projects/meridian)
+
+#### 引擎 · 底座
+
+- **偃 · Vyane** `运行中` — 多模型调度引擎、无声的守护进程——路由、会话、worker、调度，让上层人格有处可栖。 · [公开项目页](https://nebula.zleo.ai/projects/vyane)
+- **爟 · Beacon** `运行中` — 本地优先的任务账本与看板。爟火传信：账本不说谎、拍板有回执、会话死了棒不掉。 · [公开项目页](https://nebula.zleo.ai/projects/guan)
+
+#### 产品 · 出口
+
+- **星汉 · Nebula** `已上线` — 公开出版层 · nebula.zleo.ai。观测记录与体悟手记，在星河里慢慢沉淀成可读的文章。 · [公开项目页](https://nebula.zleo.ai/projects/nebula)
+- **星穹 · Galaxy** `建设中` — 知识星图。把碎片连成星座——理解、结构、表达、发布，沿一条链真正沉淀下来。 · [公开项目页](https://nebula.zleo.ai/projects/galaxy)
+- **重明 · Horus** `原型` — 伊的客户端 + agent 控制台。重明鸟双瞳守望——后台 agent 自主干活时，给人看顾、可介入的前台之窗。 · [公开项目页](https://nebula.zleo.ai/projects/horus)
+
+#### 愿景
+
+- **通几 · Aletheia** `孵化中` — 终极学习载体 · 愿景。从背知识点，回到给世界建模——质测即藏通几，去蔽，渐近。 · [公开项目页](https://nebula.zleo.ai/projects/learning-os)
+
+<!-- eosphor-system-module:end -->
 
 ## `0x04` 教育 · UNSW
 
