@@ -122,6 +122,13 @@ focus:
 
 ## `0x04` 教育 · UNSW
 
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/education-dark.webp" />
+  <img src="assets/profile/education-light.webp" alt="Maple 的学习星图：从计算机科学基础到人工智能方向的八门课程" width="100%" />
+</picture>
+</div>
+
 UNSW Master of Information Technology · 方向 Artificial Intelligence · 修读课程：
 
 | Code | Title | 方向 | Tags |
@@ -170,6 +177,13 @@ COMP9417 · 机器学习课程 group project。
 </table>
 
 ## `0x05` 技术栈
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/practice-dark.webp" />
+  <img src="assets/profile/practice-light.webp" alt="Maple 的实践层：语言、AI、前后端、基础设施与 Agent 协作形成的系统工作台" width="100%" />
+</picture>
+</div>
 
 **Languages**
 
