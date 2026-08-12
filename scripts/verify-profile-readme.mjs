@@ -88,7 +88,16 @@ function parsePublicUrl(rawUrl) {
   }
 }
 
+function rejectEncodedEntities(text) {
+  const numericEntity = /&#(?:[xX][0-9A-Fa-f]+|[0-9]+);?/;
+  const namedEntity = /&[A-Za-z][A-Za-z0-9]+;/;
+  if (numericEntity.test(text) || namedEntity.test(text)) {
+    throw new Error('encoded character references are not allowed');
+  }
+}
+
 function verify(candidate) {
+  rejectEncodedEntities(candidate);
   const snapshotSha256 = createHash('sha256').update(snapshotRaw).digest('hex');
   if (snapshotSha256 !== source.sha256) throw new Error('pinned Nebula snapshot digest mismatch');
 
@@ -205,4 +214,25 @@ try {
 }
 if (!malformedUrlRejected) throw new Error('negative test failed: malformed public URL was accepted');
 
-console.log(`profile README verified (${checkedReferences} image references checked; 10 negative cases rejected)`);
+const encodedEntries = [
+  'https:&#47;&#47;nebula.zleo.ai/admin',
+  'https:&#x2f;&#x2f;nebula.zleo.ai/auth',
+  'https://nebula&#46;zleo&#46;ai/internal',
+  `https:&#47;&#47;user:${syntheticSecret}@nebula.zleo.ai/projects/nebula`,
+  'https:&#47&#47nebula.zleo.ai/login',
+  'https:&sol;&sol;nebula.zleo.ai/admin',
+];
+for (const entry of encodedEntries) {
+  let rejected = false;
+  try {
+    verify(`${readme}\n[encoded](${entry})\n`);
+  } catch (error) {
+    rejected = true;
+    const message = String(error.message);
+    if (message.includes(syntheticSecret)) throw new Error('negative test failed: encoded URL error disclosed its input');
+    if (message !== 'encoded character references are not allowed') throw error;
+  }
+  if (!rejected) throw new Error('negative test failed: encoded URL was accepted');
+}
+
+console.log(`profile README verified (${checkedReferences} image references checked; 16 negative cases rejected)`);
