@@ -96,8 +96,13 @@ function rejectEncodedEntities(text) {
   }
 }
 
+function rejectBackslashUrls(text) {
+  if (text.includes('\\')) throw new Error('backslashes are not allowed in the public README');
+}
+
 function verify(candidate) {
   rejectEncodedEntities(candidate);
+  rejectBackslashUrls(candidate);
   const snapshotSha256 = createHash('sha256').update(snapshotRaw).digest('hex');
   if (snapshotSha256 !== source.sha256) throw new Error('pinned Nebula snapshot digest mismatch');
 
@@ -235,4 +240,23 @@ for (const entry of encodedEntries) {
   if (!rejected) throw new Error('negative test failed: encoded URL was accepted');
 }
 
-console.log(`profile README verified (${checkedReferences} image references checked; 16 negative cases rejected)`);
+const backslashEntries = [
+  'https:\\\\nebula.zleo.ai\\admin',
+  'https:/\\nebula.zleo.ai/admin',
+  '\\\\nebula.zleo.ai\\internal',
+  `https:\\\\user:${syntheticSecret}@nebula.zleo.ai\\projects\\nebula`,
+];
+for (const entry of backslashEntries) {
+  let rejected = false;
+  try {
+    verify(`${readme}\n<a href="${entry}">backslash</a>\n`);
+  } catch (error) {
+    rejected = true;
+    const message = String(error.message);
+    if (message.includes(syntheticSecret)) throw new Error('negative test failed: backslash URL error disclosed its input');
+    if (message !== 'backslashes are not allowed in the public README') throw error;
+  }
+  if (!rejected) throw new Error('negative test failed: backslash URL was accepted');
+}
+
+console.log(`profile README verified (${checkedReferences} image references checked; 20 negative cases rejected)`);
