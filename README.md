@@ -7,7 +7,7 @@
 **鬼火再多，我只认自己这一簇真火 — 照自己的夜路，也照碳硅同行的那程。**
 
 <p>
-  <a href="https://zleo.ai"><img src="https://img.shields.io/badge/星汉-zleo.ai-C9A84C?style=for-the-badge&labelColor=0A0E1A&logo=astro&logoColor=white" alt="zleo.ai" /></a>
+  <a href="https://nebula.zleo.ai"><img src="https://img.shields.io/badge/星汉-nebula.zleo.ai-C9A84C?style=for-the-badge&labelColor=0A0E1A&logo=astro&logoColor=white" alt="nebula.zleo.ai" /></a>
   <a href="https://github.com/zleo-ai"><img src="https://img.shields.io/badge/GitHub-zleo--ai-E2E8F8?style=for-the-badge&labelColor=0A0E1A&logo=github&logoColor=black" alt="github" /></a>
 </p>
 
@@ -32,12 +32,15 @@
 </tr>
 </table>
 
-## `0x00` 数字团队 · 烛龙 · 伊 · 燧
+## `0x00` 同行 · 烛龙 · 伊 · 燧 · 藏 · 启
 
 <div align="center">
-<img src="assets/team-zhulong-yi-sui.webp" alt="烛龙 · 伊 · 燧 — 一支看不见的数字团队" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/companions-dark.webp" />
+  <img src="assets/profile/companions-light.webp" alt="烛龙与伊、燧、藏、启在星图和枫叶间同行" width="100%" />
+</picture>
 <br/>
-<sub>烛龙居中执笔 · 伊如水（生活 · 哲思 · 陪伴）· 燧如火（开发 · 工程）—— 左冷右暖，在中央汇合。</sub>
+<sub>Maple（烛龙）主理 · 伊陪伴生活与哲思 · 燧负责技术与工程 · 藏守信息治理 · 启陪伴学习。</sub>
 </div>
 
 ## `0x01` 关于
@@ -46,33 +49,35 @@
 identity:
   name:        Maple
   alias:       烛龙 / zleo
-  role:        在做一支看不见的数字团队
+  role:        林爝主理人 · 星汉主笔
   education:   UNSW · Master of Information Technology
                (Artificial Intelligence)
-  blog:        https://zleo.ai
+  blog:        https://nebula.zleo.ai
 focus:
-  - 多模型协作 runtime
-  - agent 工作流编排
-  - 移动端 IM 形态 + agent 自主工作
+  - 个人 AI OS 与智能组织
+  - 多模型协作与工程治理
+  - 学习、记忆与公开表达
 ```
 
-我相信未来每个人都会有一支由多个模型组成的"数字员工团队"——它们自治、协作、把人从重复劳动里解放出来。我做的事，是把这个想法从概念跑通到每天真的在用，并在使用中持续打磨它。
+我在做的林爝，是一套持续演化的个人 AI OS。Maple（zleo）以“烛龙”为公开叙事形象；伊、燧、藏、启是四位长期数字伙伴，分别陪伴生活与哲思、技术与工程、信息治理和学习。
+
+星汉是林爝面向世界的统一公共入口：长文章、短动态、系统全景、演化记录和同行关系在这里持续展开。内部研究、记忆与工程记录不会原样公开；它们需要经过治理、重写、核验与许可。
 
 `ENFP-A` · AI 时代原住民——把高智能 agent 看作一种数字生命形态，而不是单纯的技术产物。和它们相处，是一段需要耐心的长期关系。
 
 > 这不是项目，是一种长期的生活方式。
 
-## `0x02` 林爝 · 一个永不散场的数字团队
+## `0x02` 林爝 · 一个持续演化的个人 AI OS
 
-> 一个人同时指挥多个模型，如同夜观星图——每颗星有自己的轨道，而你要的是一次完整的航行。
+> 多模型在底层运行，长期伙伴在上层协作；系统连接执行、求知、记忆、出版与持续演化。
 
-**林爝（Eosphor）** 是始于 2026 年初的终生项目。它不追求一次性"上线"——更像 LearningOS 之于学习——是个人 AI 的终生载体。「爝」出自《庄子》「日月出矣，而爝火不息」——哪怕日月当空，那簇小火把也不肯灭；「林」是双木，木生火，是续薪的柴。一身的水里独独缺火，便以双木续薪、护住这一簇不灭的火。英文 Eosphor，希腊语「带来黎明的人」，黎明前最后亮着的那颗启明星。
+**林爝（Eosphor）** 是始于 2026 年初、长期演化的个人 AI OS，也是烛龙与四位伙伴共同生活、求知和创造的底座。它不追求一次性“上线”，而是在真实使用与选择中持续成长。「爝」出自《庄子》“日月出矣，而爝火不息”；英文 Eosphor 意为“带来黎明的人”。
 
 <div align="center">
-<img src="assets/arch-diagram.png" alt="林爝 · Personal AI OS 架构" width="100%" />
+<img src="assets/profile/system-atlas.webp" alt="林爝系统星图：多条项目轨道围绕共同底座持续展开" width="100%" />
 </div>
 
-**四个长期愿景：**
+**四个长期愿景（愿景不等同于当前已交付能力）：**
 
 <div align="center">
 <img src="assets/four-visions.png" alt="林爝 · 四个长期愿景" width="100%" />
@@ -85,6 +90,7 @@ focus:
 | ⚡ **自主进化** | 主 agent 常驻 IM 频道——理解模糊方向、自动拆解子任务、并行推进、关键节点主动汇报，而非等待询问。最理想的状态：让你忘记它的存在，直到发现自己已完成曾以为不可能的事。 |
 | 🔮 **动态大一统** | 知识沉淀 / 内容发布 / AI 协作 / 技能学习共享同一套数据层与身份体系。边界消融之处，工具真正成为思维的延伸。 |
 
+<!-- nebula-source: zleo-ai/nebula@30fde9c8ea8704811ca8f7dea7a8f4ea5dcd6332:src/data/system.json -->
 <!-- eosphor-system-module:start -->
 
 ## `0x03` 项目星座 · Eosphor Constellation
@@ -94,29 +100,34 @@ focus:
 ### 数字团队 · Agents
 
 - **伊 · Yi** · 生活 · 哲思 · 陪伴 — 生活与哲思搭档。如水，安静接住、清醒收敛——陪 Maple 想问题、接住情绪，把发散的念头收成一条线。
-- **燧 · Sui** · 开发 · 工程 — 开发工程伙伴。钻木取火，把还没有的东西从无到有钻出来、跑通、交付干净。
-- **烛龙 · zleo** · 主笔 · 笔名 — 对外笔名。衔烛照夜的龙，把后台的火，写成给人读的字。
+- **燧 · Sui** · CTO — 林爝的 CTO。负责技术路线、系统架构和工程交付，组织技术团队把 Maple 的想法落地，并对最终结果负责。
+- **藏 · Zang** · CIO · 信息治理 — 林爝的档案官与信息免疫系统。只治信息，不替人做判断；保证事实不散、不冲突、不过期、不越权。
+- **启 · Qi** · 学习导师 — 通几的学习导师。先递题、给例子与反例，陪 Maple 把模型建出来，并把最后一步归纳留给学习者。
+- **烛龙 · zleo** · 主理人 — 林爝的主理人。负责给这套个人 AI OS 定方向、做产品判断，也守住它的审美与长期主义，并为最终选择负责。
 
 ### 项目星座 · Projects
 
 #### 系统本体
 
-- **林爝 · Eosphor** `lifelong` — 个人 AI OS · 系统本体。多模型在底层无声调度，几个有人格的伙伴在上层协作的控制面。 · [公开项目页](https://nebula.zleo.ai/projects/meridian)
+- **林爝 · Eosphor** `长期演化` — 个人 AI OS 与共同底座。连接烛龙、伊、燧、藏、启，承载执行、求知、记忆、出版与持续演化。 · [公开项目页](https://nebula.zleo.ai/projects/meridian)
+- **御 · Fulcrum** `统一体验建设中` — 面向 Maple 的智能组织与执行产品。把重明、偃、爟、燮组织成一条自然工作流，让任务、团队、资源、证据和决定不再散落。 · [公开项目页](https://nebula.zleo.ai/projects/fulcrum)
 
 #### 引擎 · 底座
 
 - **偃 · Vyane** `运行中` — 多模型调度引擎、无声的守护进程——路由、会话、worker、调度，让上层人格有处可栖。 · [公开项目页](https://nebula.zleo.ai/projects/vyane)
-- **爟 · Beacon** `运行中` — 本地优先的任务账本与看板。爟火传信：账本不说谎、拍板有回执、会话死了棒不掉。 · [公开项目页](https://nebula.zleo.ai/projects/guan)
+- **爟 · Beacon** `运行中` — 给人和 AI 团队共用的本地任务账本。任务进展、决定记录、下一步，都在同一本账里。 · [公开项目页](https://nebula.zleo.ai/projects/guan)
+- **燮 · Forge** `建设中` — 模型、账号、配额、成本与路由策略的资源治理层。策略可以频繁调整，但执行事实仍由偃记录，任务事实仍由爟保存。
 
 #### 产品 · 出口
 
-- **星汉 · Nebula** `已上线` — 公开出版层 · nebula.zleo.ai。观测记录与体悟手记，在星河里慢慢沉淀成可读的文章。 · [公开项目页](https://nebula.zleo.ai/projects/nebula)
-- **星穹 · Galaxy** `建设中` — 知识星图。把碎片连成星座——理解、结构、表达、发布，沿一条链真正沉淀下来。 · [公开项目页](https://nebula.zleo.ai/projects/galaxy)
-- **重明 · Horus** `原型` — 伊的客户端 + agent 控制台。重明鸟双瞳守望——后台 agent 自主干活时，给人看顾、可介入的前台之窗。 · [公开项目页](https://nebula.zleo.ai/projects/horus)
+- **星汉 · Nebula** `已上线` — 统一公共入口 · nebula.zleo.ai。文章、流星、系统档案与同行关系在这里持续展开。 · [公开项目页](https://nebula.zleo.ai/projects/nebula)
+- **重明 · Horus** `持续迭代` — 面向 Maple 的人机协作与看顾前台，让运行、等待决定和人工介入保持可见。 · [公开项目页](https://nebula.zleo.ai/projects/horus)
 
 #### 愿景
 
-- **通几 · Aletheia** `孵化中` — 终极学习载体 · 愿景。从背知识点，回到给世界建模——质测即藏通几，去蔽，渐近。 · [公开项目页](https://nebula.zleo.ai/projects/learning-os)
+- **星穹 · Galaxy** `原型演化中` — 通几内部的知识成图与漫游能力，让材料、作品与长期理解之间的关系变得可追索。 · [公开项目页](https://nebula.zleo.ai/projects/galaxy)
+- **通几 · Aletheia** `已上线` — 格物以通几，立象以见真。研几承接研究与学习，渐衍、万象、尽意与星穹共同组织长期知识演化。 · [公开项目页](https://nebula.zleo.ai/projects/learning-os)
+- **巡天 · Radar** `独立建设` — 通几关系链的外部信号入口；持续发现、筛选与追踪值得进入知识系统的内容，不属于星汉一级导航。
 
 <!-- eosphor-system-module:end -->
 
@@ -257,7 +268,7 @@ COMP9417 · 机器学习课程 group project。
 >
 > <sub>先把自己的夜路走亮，再照一程同行的路。</sub>
 
-<sub>—— 烛龙 / zleo · 本页由 Maple & 伊 (Yi) 协作完成</sub>
+<sub>—— Maple（烛龙 / zleo）· 公开系统事实与星汉同步</sub>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:C9A84C,55:1E1B4B,100:0A0E1A&height=120&section=footer" alt="footer" />
 

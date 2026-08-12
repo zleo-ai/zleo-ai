@@ -1,0 +1,39 @@
+{
+  "_note": "林爝/Eosphor 系统关系、公开状态与短描述的权威目录。Nebula 列宿总图与 tools/gen-github-readme 读取本文件；项目 MDX 仍分别管理长篇档案、页面元数据与内部档案阶段。eosphor-entry 仍需人工同步核对。",
+  "updated": "2026-08-10",
+  "projects": [
+    { "key": "eosphor", "zh": "林爝", "en": "Eosphor", "group": "system", "status": "长期演化", "link": "/projects/meridian",
+      "desc": "个人 AI OS 与共同底座。连接烛龙、伊、燧、藏、启，承载执行、求知、记忆、出版与持续演化。" },
+    { "key": "fulcrum", "zh": "御", "en": "Fulcrum", "group": "system", "status": "统一体验建设中", "link": "/projects/fulcrum",
+      "desc": "面向 Maple 的智能组织与执行产品。把重明、偃、爟、燮组织成一条自然工作流，让任务、团队、资源、证据和决定不再散落。" },
+    { "key": "vyane", "zh": "偃", "en": "Vyane", "group": "engine", "status": "运行中", "link": "/projects/vyane",
+      "desc": "多模型调度引擎、无声的守护进程——路由、会话、worker、调度，让上层人格有处可栖。" },
+    { "key": "guan", "zh": "爟", "en": "Beacon", "group": "engine", "status": "运行中", "link": "/projects/guan",
+      "desc": "给人和 AI 团队共用的本地任务账本。任务进展、决定记录、下一步，都在同一本账里。" },
+    { "key": "forge", "zh": "燮", "en": "Forge", "group": "engine", "status": "建设中", "link": null,
+      "desc": "模型、账号、配额、成本与路由策略的资源治理层。策略可以频繁调整，但执行事实仍由偃记录，任务事实仍由爟保存。" },
+    { "key": "nebula", "zh": "星汉", "en": "Nebula", "group": "product", "status": "已上线", "link": "/projects/nebula",
+      "desc": "统一公共入口 · nebula.zleo.ai。文章、流星、系统档案与同行关系在这里持续展开。" },
+    { "key": "galaxy", "zh": "星穹", "en": "Galaxy", "group": "vision", "status": "原型演化中", "link": "/projects/galaxy",
+      "desc": "通几内部的知识成图与漫游能力，让材料、作品与长期理解之间的关系变得可追索。" },
+    { "key": "horus", "zh": "重明", "en": "Horus", "group": "product", "status": "持续迭代", "link": "/projects/horus",
+      "desc": "面向 Maple 的人机协作与看顾前台，让运行、等待决定和人工介入保持可见。" },
+    { "key": "learning-os", "zh": "通几", "en": "Aletheia", "group": "vision", "status": "已上线", "link": "/projects/learning-os",
+      "desc": "格物以通几，立象以见真。研几承接研究与学习，渐衍、万象、尽意与星穹共同组织长期知识演化。" },
+    { "key": "radar", "zh": "巡天", "en": "Radar", "group": "vision", "status": "独立建设", "link": null,
+      "desc": "通几关系链的外部信号入口；持续发现、筛选与追踪值得进入知识系统的内容，不属于星汉一级导航。" }
+  ],
+  "agents": [
+    { "key": "yi", "zh": "伊", "en": "Yi", "role": "生活 · 哲思 · 陪伴",
+      "desc": "生活与哲思搭档。如水，安静接住、清醒收敛——陪 Maple 想问题、接住情绪，把发散的念头收成一条线。" },
+    { "key": "sui", "zh": "燧", "en": "Sui", "role": "CTO",
+      "desc": "林爝的 CTO。负责技术路线、系统架构和工程交付，组织技术团队把 Maple 的想法落地，并对最终结果负责。" },
+    { "key": "zang", "zh": "藏", "en": "Zang", "role": "CIO · 信息治理",
+      "desc": "林爝的档案官与信息免疫系统。只治信息，不替人做判断；保证事实不散、不冲突、不过期、不越权。" },
+    { "key": "qi", "zh": "启", "en": "Qi", "role": "学习导师",
+      "desc": "通几的学习导师。先递题、给例子与反例，陪 Maple 把模型建出来，并把最后一步归纳留给学习者。" },
+    { "key": "zhulong", "zh": "烛龙", "en": "zleo", "role": "主理人",
+      "desc": "林爝的主理人。负责给这套个人 AI OS 定方向、做产品判断，也守住它的审美与长期主义，并为最终选择负责。" }
+  ],
+  "groupLabels": { "system": "系统本体", "engine": "引擎 · 底座", "product": "产品 · 出口", "vision": "愿景" }
+}
