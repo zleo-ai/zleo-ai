@@ -78,6 +78,10 @@ function extractUrls(text) {
   return [...urls].map((url) => url.replace(/&amp;/g, '&'));
 }
 
+function normalizeUrlScanText(text) {
+  return text.replace(/[\u0009\u000A\u000D]/g, '');
+}
+
 function parsePublicUrl(rawUrl) {
   const authority = rawUrl.replace(/^(?:https?:)?\/\//i, '').split(/[/?#]/, 1)[0];
   if (authority.includes('@')) throw new Error('URL credentials are not allowed');
@@ -132,7 +136,7 @@ function verify(candidate) {
     publicBase,
     ...snapshot.projects.map((project) => publicHref(project.link)).filter(Boolean),
   ]);
-  for (const url of extractUrls(candidate)) {
+  for (const url of extractUrls(normalizeUrlScanText(candidate))) {
     const parsed = parsePublicUrl(url);
     if (parsed.username || parsed.password) throw new Error('URL credentials are not allowed');
     const normalizedHostname = parsed.hostname.replace(/\.+$/, '');
@@ -259,4 +263,25 @@ for (const entry of backslashEntries) {
   if (!rejected) throw new Error('negative test failed: backslash URL was accepted');
 }
 
-console.log(`profile README verified (${checkedReferences} image references checked; 20 negative cases rejected)`);
+const strippedControlEntries = [
+  'https:/\t/nebula.zleo.ai/admin',
+  'https:/\n/nebula.zleo.ai/auth',
+  'https:/\r/nebula.zleo.ai/internal',
+  '/\t/nebula.zleo.ai/admin',
+  'https://nebula.zleo.\nai/admin',
+  `https:/\t/user:${syntheticSecret}@nebula.zleo.ai/projects/nebula`,
+];
+for (const entry of strippedControlEntries) {
+  let rejected = false;
+  try {
+    verify(`${readme}\n<a href="${entry}">control</a>\n`);
+  } catch (error) {
+    rejected = true;
+    const message = String(error.message);
+    if (message.includes(syntheticSecret)) throw new Error('negative test failed: control URL error disclosed its input');
+    if (!['unapproved Nebula public URL', 'URL credentials are not allowed'].includes(message)) throw error;
+  }
+  if (!rejected) throw new Error('negative test failed: stripped-control URL was accepted');
+}
+
+console.log(`profile README verified (${checkedReferences} image references checked; 26 negative cases rejected)`);
