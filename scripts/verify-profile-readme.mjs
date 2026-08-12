@@ -74,7 +74,7 @@ function extractSystemModule(text) {
 }
 
 function extractUrls(text) {
-  const urls = new Set(text.match(/https?:\/\/[^\s<>"')]+/g) ?? []);
+  const urls = new Set(text.match(/(?:https?:)?\/\/[^\s<>"')]+/gi) ?? []);
   return [...urls].map((url) => url.replace(/&amp;/g, '&'));
 }
 
@@ -109,7 +109,7 @@ function verify(candidate) {
     ...snapshot.projects.map((project) => publicHref(project.link)).filter(Boolean),
   ]);
   for (const url of extractUrls(candidate)) {
-    const parsed = new URL(url);
+    const parsed = new URL(url, publicBase);
     if (parsed.hostname !== 'nebula.zleo.ai') continue;
     const normalized = `${parsed.origin}${parsed.pathname.replace(/\/$/, '') || ''}`;
     if (parsed.search || parsed.hash || !allowedNebulaUrls.has(normalized)) {
@@ -140,12 +140,19 @@ try {
   if (!String(error.message).includes('system module differs')) throw error;
 }
 
-const privateEntry = `${readme}\n[admin](${publicBase}/admin/login?next=/internal)\n`;
-try {
-  verify(privateEntry);
-  throw new Error('negative test failed: authentication entry was accepted');
-} catch (error) {
-  if (!String(error.message).includes('unapproved Nebula public URL')) throw error;
+const forbiddenEntries = [
+  `${publicBase}/admin/login?next=/internal`,
+  'HTTPS://nebula.zleo.ai/admin',
+  '//nebula.zleo.ai/admin',
+];
+for (const entry of forbiddenEntries) {
+  const privateEntry = `${readme}\n[admin](${entry})\n`;
+  try {
+    verify(privateEntry);
+    throw new Error(`negative test failed: authentication entry was accepted: ${entry}`);
+  } catch (error) {
+    if (!String(error.message).includes('unapproved Nebula public URL')) throw error;
+  }
 }
 
-console.log(`profile README verified (${checkedReferences} image references checked; 2 negative cases rejected)`);
+console.log(`profile README verified (${checkedReferences} image references checked; 4 negative cases rejected)`);
