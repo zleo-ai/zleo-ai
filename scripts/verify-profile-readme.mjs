@@ -78,6 +78,16 @@ function extractUrls(text) {
   return [...urls].map((url) => url.replace(/&amp;/g, '&'));
 }
 
+function parsePublicUrl(rawUrl) {
+  const authority = rawUrl.replace(/^(?:https?:)?\/\//i, '').split(/[/?#]/, 1)[0];
+  if (authority.includes('@')) throw new Error('URL credentials are not allowed');
+  try {
+    return new URL(rawUrl, publicBase);
+  } catch {
+    throw new Error('invalid public URL');
+  }
+}
+
 function verify(candidate) {
   const snapshotSha256 = createHash('sha256').update(snapshotRaw).digest('hex');
   if (snapshotSha256 !== source.sha256) throw new Error('pinned Nebula snapshot digest mismatch');
@@ -109,7 +119,7 @@ function verify(candidate) {
     ...snapshot.projects.map((project) => publicHref(project.link)).filter(Boolean),
   ]);
   for (const url of extractUrls(candidate)) {
-    const parsed = new URL(url, publicBase);
+    const parsed = parsePublicUrl(url);
     if (parsed.username || parsed.password) throw new Error('URL credentials are not allowed');
     const normalizedHostname = parsed.hostname.replace(/\.+$/, '');
     if (normalizedHostname !== 'nebula.zleo.ai') continue;
@@ -167,4 +177,32 @@ try {
   if (!String(error.message).includes('URL credentials are not allowed')) throw error;
 }
 
-console.log(`profile README verified (${checkedReferences} image references checked; 6 negative cases rejected)`);
+const syntheticSecret = ['SYNTHETIC', 'SECRET', '794'].join('_');
+const malformedCredentialEntries = [
+  `https://user:${syntheticSecret}@`,
+  `https://user:${syntheticSecret}@example.com:99999/path`,
+  `https://user:${syntheticSecret}@[::1/path`,
+];
+for (const entry of malformedCredentialEntries) {
+  let rejected = false;
+  try {
+    verify(`${readme}\n[private](${entry})\n`);
+  } catch (error) {
+    rejected = true;
+    const message = String(error.message);
+    if (message.includes(syntheticSecret)) throw new Error('negative test failed: credential error disclosed its input');
+    if (!message.includes('URL credentials are not allowed')) throw error;
+  }
+  if (!rejected) throw new Error('negative test failed: malformed credential URL was accepted');
+}
+
+let malformedUrlRejected = false;
+try {
+  verify(`${readme}\n[invalid](https://[::1/path)\n`);
+} catch (error) {
+  malformedUrlRejected = true;
+  if (String(error.message) !== 'invalid public URL') throw error;
+}
+if (!malformedUrlRejected) throw new Error('negative test failed: malformed public URL was accepted');
+
+console.log(`profile README verified (${checkedReferences} image references checked; 10 negative cases rejected)`);
