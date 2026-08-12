@@ -110,10 +110,13 @@ function verify(candidate) {
   ]);
   for (const url of extractUrls(candidate)) {
     const parsed = new URL(url, publicBase);
-    if (parsed.hostname !== 'nebula.zleo.ai') continue;
+    if (parsed.username || parsed.password) throw new Error('URL credentials are not allowed');
+    const normalizedHostname = parsed.hostname.replace(/\.+$/, '');
+    if (normalizedHostname !== 'nebula.zleo.ai') continue;
+    if (parsed.hostname !== 'nebula.zleo.ai') throw new Error('non-canonical Nebula hostname');
     const normalized = `${parsed.origin}${parsed.pathname.replace(/\/$/, '') || ''}`;
     if (parsed.search || parsed.hash || !allowedNebulaUrls.has(normalized)) {
-      throw new Error(`unapproved Nebula public URL: ${url}`);
+      throw new Error('unapproved Nebula public URL');
     }
   }
 
@@ -141,18 +144,27 @@ try {
 }
 
 const forbiddenEntries = [
-  `${publicBase}/admin/login?next=/internal`,
-  'HTTPS://nebula.zleo.ai/admin',
-  '//nebula.zleo.ai/admin',
+  [`${publicBase}/admin/login?next=/internal`, 'unapproved Nebula public URL'],
+  ['HTTPS://nebula.zleo.ai/admin', 'unapproved Nebula public URL'],
+  ['//nebula.zleo.ai/admin', 'unapproved Nebula public URL'],
+  ['https://nebula.zleo.ai./admin', 'non-canonical Nebula hostname'],
 ];
-for (const entry of forbiddenEntries) {
+for (const [entry, expectedError] of forbiddenEntries) {
   const privateEntry = `${readme}\n[admin](${entry})\n`;
   try {
     verify(privateEntry);
     throw new Error(`negative test failed: authentication entry was accepted: ${entry}`);
   } catch (error) {
-    if (!String(error.message).includes('unapproved Nebula public URL')) throw error;
+    if (!String(error.message).includes(expectedError)) throw error;
   }
 }
 
-console.log(`profile README verified (${checkedReferences} image references checked; 4 negative cases rejected)`);
+const credentialEntry = `${readme}\n[private](https://user:secret@nebula.zleo.ai/projects/nebula)\n`;
+try {
+  verify(credentialEntry);
+  throw new Error('negative test failed: URL credentials were accepted');
+} catch (error) {
+  if (!String(error.message).includes('URL credentials are not allowed')) throw error;
+}
+
+console.log(`profile README verified (${checkedReferences} image references checked; 6 negative cases rejected)`);
