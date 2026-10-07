@@ -10,9 +10,9 @@ const snapshot = JSON.parse(snapshotRaw);
 const publicBase = 'https://nebula.zleo.ai';
 const source = {
   repository: 'zleo-ai/nebula',
-  commit: '12e70002dc76036a722f96004e445d84885bea05',
+  commit: '905774c42c0279cdf4e7debc1e091da7a318a9cd',
   path: 'src/data/system.json',
-  sha256: '984084d4a6c4d37034bf0dc67e4827db4ac6f2f1862806a637009b9d88f0bc23',
+  sha256: '0f1cc06a9c472f09e20570d8479340e2ec6725af2a7aece5995f9a938272bee4',
 };
 const groups = ['system', 'engine', 'product', 'vision'];
 const startMarker = '<!-- eosphor-system-module:start -->';

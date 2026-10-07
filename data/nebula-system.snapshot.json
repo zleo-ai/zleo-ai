@@ -1,5 +1,5 @@
 {
-  "_note": "林爝/Eosphor 系统关系、公开状态与短描述的权威目录。Nebula 列宿总图与 tools/gen-github-readme 读取本文件；项目 MDX 仍分别管理长篇档案、页面元数据与内部档案阶段。eosphor-entry 仍需人工同步核对。",
+  "_note": "林爝/Eosphor 系统关系、公开状态与短描述的权威目录。Nebula 列宿总图与 tools/gen-github-readme 读取本文件；项目 MDX 仍分别管理长篇档案、页面元数据与内部档案阶段。",
   "updated": "2026-10-07",
   "projects": [
     { "key": "eosphor", "zh": "林爝", "en": "Eosphor", "group": "system", "status": "长期演化", "link": "/projects/meridian",
@@ -42,8 +42,8 @@
       "desc": "林爝的首席产品官。定产品形态与体验，出品牌方案、做取舍；对外发布与品牌由 Maple 拍板。" },
     { "key": "cheng", "zh": "澄", "en": "Metra", "role": "CDO · 指标与评测",
       "desc": "林爝的首席数据官。定指标与评测口径，数字要能复算；没有数据就说没有。" },
-    { "key": "xu", "zh": "叙", "en": "Calliope", "role": "AiR · 驻站作者",
-      "desc": "星汉的驻站作者。以诗词、歌曲、书籍与演讲为引子写短篇小说，作品以叙署名，每篇照实写明执笔的模型。" },
+    { "key": "xu", "zh": "叙", "en": "Calliope", "role": "CCO · 内容与出版",
+      "desc": "林爝的首席内容官。管星汉的栏目、编辑尺度与发布节奏，也照看各个对外渠道的内容口径；每篇发出前把好事实与文字，自己也写小说。" },
     { "key": "zhulong", "zh": "烛龙", "en": "Maple", "role": "主理人",
       "desc": "林爝的主理人。负责给这套个人 AI OS 定方向、做产品判断，也守住它的审美与长期主义，并为最终选择负责。" }
   ],
