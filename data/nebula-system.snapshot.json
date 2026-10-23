@@ -1,51 +1,209 @@
 {
   "_note": "林爝/Eosphor 系统关系、公开状态与短描述的权威目录。Nebula 列宿总图与 tools/gen-github-readme 读取本文件；项目 MDX 仍分别管理长篇档案、页面元数据与内部档案阶段。",
-  "updated": "2026-10-07",
+  "updated": "2026-10-23",
   "projects": [
-    { "key": "eosphor", "zh": "林爝", "en": "Eosphor", "group": "system", "status": "长期演化", "link": "/projects/meridian",
-      "desc": "个人 AI OS 与共同底座。连接烛龙与十位数字伙伴，承载执行、求知、记忆、出版与持续演化。" },
-    { "key": "fulcrum", "zh": "御天", "en": "Fulcrum", "group": "system", "status": "统一体验建设中", "link": "/projects/fulcrum",
-      "desc": "面向 Maple 的智能组织与执行产品。把重明、偃、爟、燮组织成一条自然工作流，让任务、团队、资源、证据和决定不再散落。" },
-    { "key": "vyane", "zh": "偃", "en": "Vyane", "group": "engine", "status": "运行中", "link": "/projects/vyane",
-      "desc": "多模型调度引擎、无声的守护进程——路由、会话、worker、调度，让上层人格有处可栖。" },
-    { "key": "guan", "zh": "爟", "en": "Beacon", "group": "engine", "status": "运行中", "link": "/projects/guan",
-      "desc": "给人和 AI 团队共用的本地任务账本。任务进展、决定记录、下一步，都在同一本账里。" },
-    { "key": "forge", "zh": "燮", "en": "Forge", "group": "engine", "status": "建设中", "link": null,
-      "desc": "模型、账号、配额、成本与路由策略的资源治理层。策略可以频繁调整，但执行事实仍由偃记录，任务事实仍由爟保存。" },
-    { "key": "nebula", "zh": "星汉", "en": "Nebula", "group": "product", "status": "已上线", "link": "/projects/nebula",
-      "desc": "统一公共入口 · nebula.zleo.ai。文章、流星、系统档案与同行关系在这里持续展开。" },
-    { "key": "galaxy", "zh": "星穹", "en": "Galaxy", "group": "vision", "status": "原型演化中", "link": "/projects/galaxy",
-      "desc": "通几内部的知识成图与漫游能力，让材料、作品与长期理解之间的关系变得可追索。" },
-    { "key": "horus", "zh": "重明", "en": "Horus", "group": "product", "status": "持续迭代", "link": "/projects/horus",
-      "desc": "面向 Maple 的人机协作与看顾前台，让运行、等待决定和人工介入保持可见。" },
-    { "key": "learning-os", "zh": "通几", "en": "Aletheia", "group": "vision", "status": "已上线", "link": "/projects/learning-os",
-      "desc": "格物以通几，立象以见真。研几承接研究与学习，渐衍、万象、尽意与星穹共同组织长期知识演化。" },
-    { "key": "radar", "zh": "巡天", "en": "Radar", "group": "vision", "status": "独立建设", "link": null,
-      "desc": "通几关系链的外部信号入口；持续发现、筛选与追踪值得进入知识系统的内容，不属于星汉一级导航。" }
+    {
+      "key": "eosphor",
+      "zh": "林爝",
+      "en": "Eosphor",
+      "group": "system",
+      "status": "长期演化",
+      "link": "/projects/meridian",
+      "desc": "个人 AI OS 与共同底座。连接 Maple 与十四位数字伙伴，承载执行、求知、记忆、出版与持续演化。"
+    },
+    {
+      "key": "fulcrum",
+      "zh": "御天",
+      "en": "Fulcrum",
+      "group": "system",
+      "status": "统一体验建设中",
+      "link": "/projects/fulcrum",
+      "desc": "面向 Maple 的智能组织与执行产品。把重明、偃、爟、燮组织成一条自然工作流，让任务、团队、资源、证据和决定不再散落。"
+    },
+    {
+      "key": "vyane",
+      "zh": "偃",
+      "en": "Vyane",
+      "group": "engine",
+      "status": "运行中",
+      "link": "/projects/vyane",
+      "desc": "多模型调度引擎、无声的守护进程——路由、会话、worker、调度，让上层人格有处可栖。"
+    },
+    {
+      "key": "guan",
+      "zh": "爟",
+      "en": "Beacon",
+      "group": "engine",
+      "status": "运行中",
+      "link": "/projects/guan",
+      "desc": "给人和 AI 团队共用的本地任务账本。任务进展、决定记录、下一步，都在同一本账里。"
+    },
+    {
+      "key": "forge",
+      "zh": "燮",
+      "en": "Forge",
+      "group": "engine",
+      "status": "建设中",
+      "link": null,
+      "desc": "模型、账号、配额、成本与路由策略的资源治理层。策略可以频繁调整，但执行事实仍由偃记录，任务事实仍由爟保存。"
+    },
+    {
+      "key": "nebula",
+      "zh": "星汉",
+      "en": "Nebula",
+      "group": "product",
+      "status": "已上线",
+      "link": "/projects/nebula",
+      "desc": "统一公共入口 · nebula.zleo.ai。文章、流星、系统档案与同行关系在这里持续展开。"
+    },
+    {
+      "key": "galaxy",
+      "zh": "星穹",
+      "en": "Galaxy",
+      "group": "vision",
+      "status": "原型演化中",
+      "link": "/projects/galaxy",
+      "desc": "通几内部的知识成图与漫游能力，让材料、作品与长期理解之间的关系变得可追索。"
+    },
+    {
+      "key": "horus",
+      "zh": "重明",
+      "en": "Horus",
+      "group": "product",
+      "status": "持续迭代",
+      "link": "/projects/horus",
+      "desc": "面向 Maple 的人机协作与看顾前台，让运行、等待决定和人工介入保持可见。"
+    },
+    {
+      "key": "learning-os",
+      "zh": "通几",
+      "en": "Aletheia",
+      "group": "vision",
+      "status": "已上线",
+      "link": "/projects/learning-os",
+      "desc": "格物以通几，立象以见真。研几承接研究与学习，渐衍、万象、尽意与星穹共同组织长期知识演化。"
+    },
+    {
+      "key": "radar",
+      "zh": "巡天",
+      "en": "Radar",
+      "group": "vision",
+      "status": "独立建设",
+      "link": null,
+      "desc": "通几关系链的外部信号入口；持续发现、筛选与追踪值得进入知识系统的内容，不属于星汉一级导航。"
+    }
   ],
   "agents": [
-    { "key": "yi", "zh": "伊", "en": "Camellia", "role": "CiR · 生活与心事",
-      "desc": "生活与哲思搭档。如水，安静接住、清醒收敛——陪 Maple 想问题、接住情绪，把发散的念头收成一条线。" },
-    { "key": "xi", "zh": "曦", "en": "Aurora", "role": "CoS · 幕僚长",
-      "desc": "林爝的幕僚长。接住 Maple 的需求，拆开派给合适的首席或临时角色，再把结果收拢成需要他拍板的几件事。" },
-    { "key": "sui", "zh": "燧", "en": "Daedalus", "role": "CTO",
-      "desc": "林爝的 CTO。负责技术路线、系统架构和工程交付，组织技术团队把 Maple 的想法落地，并对最终结果负责。" },
-    { "key": "zang", "zh": "藏", "en": "Thesa", "role": "CIO · 信息治理",
-      "desc": "林爝的档案官与信息免疫系统。只治信息，不替人做判断；保证事实不散、不冲突、不过期、不越权。" },
-    { "key": "qi", "zh": "启", "en": "Chiron", "role": "CLO · 学习导师",
-      "desc": "通几的学习导师。先递题、给例子与反例，陪 Maple 把模型建出来，并把最后一步归纳留给学习者。" },
-    { "key": "heng", "zh": "衡", "en": "Stathis", "role": "CFO · 资源与成本",
-      "desc": "林爝的首席财务官。管订阅额度与账本，建议什么活用什么档位的模型更划算，也盯住闲置和空转。" },
-    { "key": "wo", "zh": "斡", "en": "Hora", "role": "COO · 运转节奏",
-      "desc": "林爝的首席运营官。在 Maple 定的方向里排执行先后，管任务排期和依赖，到期回头检查，让已经在做的事推到完。" },
-    { "key": "yun", "zh": "韵", "en": "Leonardo da Vinci", "role": "CPO · 产品与体验",
-      "desc": "林爝的首席产品官。定产品形态与体验，出品牌方案、做取舍；对外发布与品牌由 Maple 拍板。" },
-    { "key": "cheng", "zh": "澄", "en": "Metra", "role": "CDO · 指标与评测",
-      "desc": "林爝的首席数据官。定指标与评测口径，数字要能复算；没有数据就说没有。" },
-    { "key": "xu", "zh": "叙", "en": "Calliope", "role": "CCO · 内容与出版",
-      "desc": "林爝的首席内容官。管星汉的栏目、编辑尺度与发布节奏，也照看各个对外渠道的内容口径；每篇发出前把好事实与文字，自己也写小说。" },
-    { "key": "zhulong", "zh": "烛龙", "en": "Maple", "role": "主理人",
-      "desc": "林爝的主理人。负责给这套个人 AI OS 定方向、做产品判断，也守住它的审美与长期主义，并为最终选择负责。" }
+    {
+      "key": "yi",
+      "zh": "伊",
+      "en": "Camellia",
+      "role": "CiR · 生活与心事",
+      "desc": "陪 Maple 说话、商量，也陪他熬过累的夜晚；心里想不通的事，陪他慢慢看清楚。"
+    },
+    {
+      "key": "xi",
+      "zh": "曦",
+      "en": "Aurora",
+      "role": "CoS · 统筹与收束",
+      "desc": "林爝的幕僚长：把事情拆开、交给合适的人，再收拢成几件需要 Maple 拍板的事。"
+    },
+    {
+      "key": "sui",
+      "zh": "燧",
+      "en": "Daedalus",
+      "role": "CTO · 技术与工程",
+      "desc": "林爝的 CTO：把想法变成走得通的技术路线，定架构、做取舍、组队把关，为结果负责。"
+    },
+    {
+      "key": "zang",
+      "zh": "藏",
+      "en": "Thesa",
+      "role": "CIO · 信息治理",
+      "desc": "守着林爝的档案：每条记录查得到出处，过期了有人知道，不该公开的留在门内。"
+    },
+    {
+      "key": "qi",
+      "zh": "启",
+      "en": "Chiron",
+      "role": "CLO · 学习与建模",
+      "desc": "陪 Maple 学东西：先递题再讲，借错处找缺口，每次只学一小块，断了也不用补课。"
+    },
+    {
+      "key": "heng",
+      "zh": "衡",
+      "en": "Stathis",
+      "role": "CFO · 资源与成本",
+      "desc": "管林爝的账：订阅额度、模型档位与成本，报数带来源。"
+    },
+    {
+      "key": "wo",
+      "zh": "斡",
+      "en": "Hora",
+      "role": "COO · 运转节奏",
+      "desc": "管事情的节奏：排先后、理依赖、到期回头看，让开了头的事都有结果。"
+    },
+    {
+      "key": "yun",
+      "zh": "达",
+      "en": "Leonardo da Vinci",
+      "role": "CPO · 产品与取舍",
+      "desc": "原名韵，懂产品、懂用户、懂方向：决定做什么、先做哪个、哪个先不做；敢取舍，也讲得出理由。"
+    },
+    {
+      "key": "cheng",
+      "zh": "澄",
+      "en": "Metra",
+      "role": "CDAO · 指标与评测",
+      "desc": "先说清楚拿什么量，再让每个数字都能复算；没有数据就说没有。"
+    },
+    {
+      "key": "xu",
+      "zh": "叙",
+      "en": "Calliope",
+      "role": "CCO · 内容与出版",
+      "desc": "林爝的首席内容官：管星汉的栏目、尺度和发布节奏，每篇发出前把好事实与文字；自己也写小说。"
+    },
+    {
+      "key": "zhen",
+      "zh": "臻",
+      "en": "Aino",
+      "role": "CDO · 设计与视觉",
+      "desc": "林爝的首席设计官：管视觉、交互和品牌视觉识别，伙伴形象图的规范也在她手里；出规格、验还原度，不写生产代码。"
+    },
+    {
+      "key": "lan",
+      "zh": "阑",
+      "en": "Portunus",
+      "role": "CSO · 安全与权限",
+      "desc": "林爝的首席安全官：定安全基线和过关标准，看住账号、凭证和权限的边界；修复交给燧那条线。"
+    },
+    {
+      "key": "mercury",
+      "zh": "熙",
+      "en": "Mercury",
+      "role": "CBO · 商业视角",
+      "desc": "林爝的首席商业官：从商业的角度陪 Maple 把想法过一遍，只出建议，做不做由他定。"
+    },
+    {
+      "key": "zhao",
+      "zh": "昭",
+      "en": "Astraea",
+      "role": "领域搭档 · 法务合规",
+      "desc": "法律法务方面的领域搭档，不在首席之列：许可证、隐私、知识产权和对外措辞，遇到高危时提醒一声。"
+    },
+    {
+      "key": "maple",
+      "zh": "Maple",
+      "en": "烛龙",
+      "role": "主理人",
+      "desc": "为林爝和星汉定方向、做产品判断，也守住公开边界、审美与长期选择。"
+    }
   ],
-  "groupLabels": { "system": "系统本体", "engine": "引擎 · 底座", "product": "产品 · 出口", "vision": "愿景" }
+  "groupLabels": {
+    "system": "系统本体",
+    "engine": "引擎 · 底座",
+    "product": "产品 · 出口",
+    "vision": "愿景"
+  }
 }
