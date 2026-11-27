@@ -15,12 +15,23 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v7
+
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#4F6BF6&color_dots=#1E1B4B,#3B3F8C,#4F6BF6,#7B8EFB,#A6B4FF
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Generate activity graph SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-activity-graph.mjs --user "${{ github.repository_owner }}" --output dist/github-activity-graph.svg
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:

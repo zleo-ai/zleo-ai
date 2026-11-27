@@ -122,11 +122,13 @@ function verify(candidate) {
   }
 
   const privatePatterns = [
-    /\/home\/maple/i,
-    /C:\\Users\\Maple/i,
-    /beacon\.zleo\.ai/i,
-    /\.local\/share\/vyane/i,
-    /localhost(?::\d+)?/i,
+    new RegExp('/' + '(?:home|Users)/[A-Za-z0-9._-]+', 'i'),
+    new RegExp('[A-Za-z]:\\\\' + 'Users\\\\[A-Za-z0-9._-]+', 'i'),
+    new RegExp('\\b' + 'beacon' + '\\.(?:sqlite|[A-Za-z0-9-]+\\.[A-Za-z]{2,})\\b', 'i'),
+    new RegExp('\\.' + 'local/share/vyane\\b', 'i'),
+    new RegExp('\\b' + 'local' + 'host(?::\\d+)?\\b', 'i'),
+    new RegExp('(?:^|[^0-9.])(?:10\\.|192\\.168\\.|172\\.(?:1[6-9]|2\\d|3[01])\\.|100\\.(?:6[4-9]|[7-9]\\d|1[01]\\d|12[0-7])\\.)\\d{1,3}\\.\\d{1,3}(?![0-9.])'),
+    new RegExp('\\.[A-Za-z0-9-]+\\.' + 'ts\\.net\\b', 'i'),
   ];
   for (const pattern of privatePatterns) {
     if (pattern.test(candidate)) throw new Error(`private implementation detail found: ${pattern}`);
@@ -284,4 +286,24 @@ for (const entry of strippedControlEntries) {
   if (!rejected) throw new Error('negative test failed: stripped-control URL was accepted');
 }
 
-console.log(`profile README verified (${checkedReferences} image references checked; 26 negative cases rejected)`);
+const privateDetailEntries = [
+  ['/', 'home', '/maintainer/work'].join(''),
+  ['/', 'Users', '/maintainer/work'].join(''),
+  ['beacon', 'internal', 'example'].join('.'),
+  ['.', 'local/share/', 'vyane'].join(''),
+  ['local', 'host:3000'].join(''),
+  ['192', '168', '1', '10'].join('.'),
+  ['box', 'tailnet', 'ts', 'net'].join('.'),
+];
+for (const entry of privateDetailEntries) {
+  let rejected = false;
+  try {
+    verify(`${readme}\n<!-- ${entry} -->\n`);
+  } catch (error) {
+    rejected = true;
+    if (!String(error.message).includes('private implementation detail found')) throw error;
+  }
+  if (!rejected) throw new Error('negative test failed: private detail was accepted');
+}
+
+console.log(`profile README verified (${checkedReferences} image references checked; ${26 + privateDetailEntries.length} negative cases rejected)`);

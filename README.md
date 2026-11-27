@@ -257,7 +257,7 @@ COMP9417 · 机器学习课程 group project。
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=zleo-ai&theme=react-dark&hide_border=true&bg_color=0A0E1A&color=C9A84C&line=C9A84C&point=E2E8F8&area=true&area_color=C9A84C" alt="activity graph" width="850" />
+<img src="https://raw.githubusercontent.com/zleo-ai/zleo-ai/output/github-activity-graph.svg" alt="activity graph" width="850" />
 
 <br/>
 

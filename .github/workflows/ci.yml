@@ -21,3 +21,5 @@ jobs:
           node-version: 24
       - name: Verify public profile facts and assets
         run: node scripts/verify-profile-readme.mjs
+      - name: Test activity graph generator
+        run: node --test scripts/test-activity-graph.mjs
